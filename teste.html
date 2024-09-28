@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbos Irregulares - Prova de inglês</title>
+    <script src="teste.js"></script>
+    <style>
+        body{
+            font-family: sans-serif;
+            color: white;
+            background-color: rgb(169, 55, 214);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #tudo{
+            border-style: solid;
+            width: 400px; 
+            height: 400px;
+            border-radius: 10px;
+         }
+        button:active{
+            opacity: 0.6;
+        }
+        button{
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 20px;
+            color: white;
+            height: 30px;
+
+        }
+        input{
+            padding: 5px;
+            margin-bottom: 5px;
+            width: 200px;
+            border-radius: 10px;
+            border: none;
+        }
+
+
+        #sorteio{
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+        }
+        #result::after{
+            opacity: 0.5;
+        }
+    
+    </style>
+</head>
+<body>
+    <center><div id="tudo">
+    <h1>TESTE DE INGLÊS</h1><br>
+    <h2>VERBOS IRREGULARES</h2><br>
+    <h3>by: @naluzxj</h3>
+    <button type="button" onclick="sorteio()">SORTEAR VERBO</button><br><br>
+    <div id="sorteio"></div><br>
+    <input type="text" id="x" placeholder="Insira a resposta">
+    <button type="submit" onclick="respostas()">Enviar</button>
+    <div id="result"></div>
+    </div>
+
+</center>
+</html>
