@@ -4,86 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verbos Irregulares - Prova de inglês</title>
-    
-    <style>
-        body{
-            font-family: sans-serif;
-            color: rgb(255, 166, 0);
-            background-color: rgb(0, 0, 0);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        #tudo{
-            background-color: rgb(0, 0, 0);
-            padding: 20px 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
-            width: 400px;
-            box-sizing: border-box;
-            order: none;
-        }
-        
-        .title2{
-            color: white;
-        }
-
-        .title3{
-            margin-top: -40px;
-        }
-
-        .text{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 1px;
-        }
-
-
-        button:active{
-            opacity: 0.6;
-        }
-
-        button:hover{
-            cursor: pointer;
-            background-color: rgb(255, 166, 0);
-            border-color: rgb(255, 166, 0);
-            font-size: larger;
-            color: black;
-            transition: 0.3s;
-        }
-
-        button{
-            background-color: transparent;
-            border: 1px solid white;
-            border-radius: 20px;
-            color: white;
-            width: 300px;
-            font-size: medium;
-            height: 30px;
-
-        }
-        input{
-            background-color: transparent;
-            padding: 5px;
-            margin-bottom: 5px;
-            width: 290px;
-            border-radius: 15px;
-            border-color: white;
-            color: rgb(255, 166, 0);
-        }
-
-
-        #sorteio{
-            color: rgb(255, 166, 0);
-            font-weight: 600;
-        }
-        #result::after{
-            opacity: 0.5;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <center><div id="tudo">
@@ -98,7 +19,7 @@
     <button type="submit" onclick="respostas()">Enviar</button>
     <div id="result"></div>
     </div>
-    <script src="./main/teste.js"></script>
+    <script src="script.js"></script>
 </body>
 </center>
 </html>
