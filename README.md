@@ -6,7 +6,7 @@ Este é um quiz simples para praticar **verbos irregulares em inglês**. O aplic
 
 Feito com **HTML**, **CSS** e **JavaScript puro**. Sem dependências externas.
 
-**Autor:** [@analudevv](https://github.com/analudevv) (baseado no crédito no index.html)
+**Autor:** [@analudevv](https://github.com/analudevv)
 
 ## Funcionalidades
 
