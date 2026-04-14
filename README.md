@@ -28,49 +28,7 @@ Exemplo:
 Verbo sorteado: `go(ir)`  
 Resposta esperada: `went e gone`
 
-## Estrutura do Projeto
 
-```
-verbos-irregulares/
-├── index.html       # Página principal (HTML + CSS inline)
-└── main/
-    └── teste.js     # Lógica JS (lista de verbos + funções sorteio/respostas)
-```
-
-## Lista de Verbos
-
-A lista inclui verbos comuns como:
-- be (was/were, been)
-- go (went, gone)
-- eat (ate, eaten)
-- write (wrote, written)
-- ... (veja o array em `main/teste.js`)
-
-## Problemas Conhecidos / Melhorias Sugeridas
-
-- **Bugs no JS:**
-  - Usa `=` em vez de `==` ou `===` nas comparações (funciona mas não é best practice)
-  - Verbo \"read(ler)\" rotulado errado como \"escrever\"
-  - Resposta incompleta para \"sit(sentar)\"
-  - Comparação case-sensitive (melhor normalizar para lowercase)
-  - Falta alguns verbos da lista original no `if-else`
-
-- **Melhorias:**
-  - Adicionar pontuação/acertos
-  - Modo treino (repetir errados)
-  - Lista completa de 200+ verbos irregulares
-  - Sons/efeitos visuais
-  - Exportar resultados
-
-## Contribuições
-
-Sinta-se à vontade para:
-- Corrigir bugs no JS
-- Adicionar mais verbos
-- Melhorar UI/UX
-- Transformar em PWA
-
-Fork, PRs bem-vindos!
 
 ## Licença
 
