@@ -1,1 +1,0 @@
-# TODO: Update variable 'a' to 'verbo' in script.js if-else structure\n\n## Steps:\n1. [x] Create TODO.md (done)\n2. [x] Replace `a ==` with `verbo ==` in all relevant else-if conditions in public/scripts/script.js using edit_file (batched)\n3. [x] Verify changes with read_file or search_files\n4. [x] Mark complete and attempt_completion
