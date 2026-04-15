@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbos Irregulares</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header>
+    <a href="index.html">
+        <img src="/public/assets/exit.png">
+    </a>
+</header>
+<body>
+    <div class="container">
+        <form>
+        <h1 id="title1">QUIZ DE INGLÊS</h1>
+        <h2 id="title2">Verbo sorteado &darr;</h2>
+        <div id="verbo"></div>
+        <div class="enviar-resposta">
+        <input type="text" id="particípio" placeholder="Forma no particípio">
+        <h3>e</h3>
+        <input type="text" id="passado" placeholder="Forma no passado">
+        </div>
+        <button id="sorteio" onclick="sorteio()">Enviar resposta</button>
+        <div class="result"></div>
+        </form>
+    </div>
+    <script src="/public/scripts/script.js"></script>
+</body>
+</html>
