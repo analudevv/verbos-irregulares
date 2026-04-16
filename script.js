@@ -280,8 +280,27 @@ function respostas(){
             result = "você errou, a resposta certa é wrote e written";
         }
     }
-    document.getElementById('result').innerHTML = result + "<br>Responda a próxima";
-    sorteio();
+
+    let tempo = 3;
+
+    document.getElementById('result').innerHTML = 
+    result + "<br>Responda a próxima em " + tempo;
+    document.getElementById('verbo').innerHTML = "";
+
+    const contador = setInterval(() => {
+        tempo--;
+
+        document.getElementById('result').innerHTML = 
+            result + "<br>Responda a próxima em " + tempo;
+
+        if (tempo === 0) {
+            clearInterval(contador);
+    }
+    }, 1000);
+
+    setTimeout(() => {
+        sorteio();
+    }, 3000);
     document.getElementById('participio').value = "";
     document.getElementById('passado').value = "";
 }

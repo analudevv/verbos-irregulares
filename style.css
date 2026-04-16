@@ -41,7 +41,8 @@ header img:hover {
 }
 
 .enviar-resposta input {
-    width: 200px;
+    width: 100%;
+    max-width: 300px;
     padding: 12px;
     font-size: 16px;
     text-align: center;
@@ -57,7 +58,11 @@ header img:hover {
     color: #000000;
 }
 
-#sorteio{
+.enviar-resposta input::placeholder {
+    font-size: 13px;
+}
+
+.btn{
     background-color: black;
     color: white;
     width: 300px;
@@ -66,13 +71,41 @@ header img:hover {
     border-radius: 15px;
 }
 
+
 #verbo{
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* empilha */
+    align-items: center;    /* centraliza */
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    border: 2px solid #000; /* borda */
+    border-radius: 20px;     /* cantos arredondados */
+    padding: 30px;
+    
+    max-width: 400px;        /* limita largura */
+    width: 90%;              /* responsivo */
+    
+    background-color: white; /* destaca do fundo */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* sombra suave */
 }
 
 @media (max-width: 768px) {
   .enviar-resposta{
     flex-direction: column;
   }
+  .enviar-resposta input::placeholder {
+    font-size: 17px;
+}
 }

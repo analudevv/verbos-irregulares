@@ -9,22 +9,25 @@
 </head>
 <header>
     <a href="index.html">
-        <img src="exit.png">
+        <img src="/images/exit.png">
     </a>
 </header>
 <body>
     <div class="container">
         <form>
         <h1 id="title1">QUIZ DE INGLÊS</h1>
-        <h2 id="title2">Verbo sorteado &darr;</h2>
+        <h1 id="title2">Verbo sorteado &darr;</h2>
         <div id="verbo"></div>
         <div class="enviar-resposta">
-        <input type="text" id="particípio" placeholder="Forma no particípio">
+        <input type="text" id="participio" placeholder="Forma no particípio">
         <h3>e</h3>
         <input type="text" id="passado" placeholder="Forma no passado">
         </div>
-        <button id="sorteio" onclick="sorteio()">Enviar resposta</button>
-        <div class="result"></div>
+        <div class="buttons">
+        <button class="btn" onclick="sorteio()" type="button">Sortear verbo</button>
+        <button class="btn" onclick="respostas()" type="button">Enviar resposta</button>
+        <div id="result"></div>
+        </div>
         </form>
     </div>
     <script src="script.js"></script>
